@@ -17,3 +17,7 @@ Route::get('/',function(){
 Route::get('/usuarios',function(){
 	return 'Usuarios';
 });
+
+Route::get('/usuarios/{id}',function($id){
+	return "Mostrando detalles del usuario:{$id}";
+});
