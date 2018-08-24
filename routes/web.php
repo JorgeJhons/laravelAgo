@@ -25,3 +25,11 @@ Route::get('/usuarios/{id}',function($id){
 Route::get('/usuarios/nuevo',function(){
 	return "Crear nuevo usuario...";
 });
+
+Route::get('/saludo/{name}/{nickname?}',function($name,$nickname=null){
+	if($nickname){
+		return "Welcome {$name}, tu apodo es: {$nickname}";
+	}else{
+		return "Welcome {$name}, no tienes apodo.";
+	}
+});
