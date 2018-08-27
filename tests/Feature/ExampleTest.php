@@ -16,4 +16,10 @@ class ExampleTest extends TestCase
              ->assertStatus(200)
              ->assertSee('Usuarios');
     }
+
+    function cargar_detalles_de_usuarios(){
+        $response = $this->get('/usuarios/5')
+                        ->assertStatus(200)
+                        ->assertSee('Mostrando detalles del usuario:5');
+    }
 }
