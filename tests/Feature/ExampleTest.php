@@ -22,4 +22,9 @@ class ExampleTest extends TestCase
                         ->assertStatus(200)
                         ->assertSee('Mostrando detalles del usuario:5');
     }
+    function nuevo_usuario(){
+        $response = $this->get('/usuarios/nuevo')
+                        ->assertStatus(200)
+                        ->assertSee('Crear nuevo usuario...');
+    }
 }
