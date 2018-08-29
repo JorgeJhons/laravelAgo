@@ -9,11 +9,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UserModuleTest extends TestCase
 {
     /**
-     * A basic test example.
+     * 
      *
-     * @return void
+     * @test
      */
-    public function testExample()
+    function testExample()
     {
 
         $this->get('/usuarios')
