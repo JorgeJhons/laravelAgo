@@ -13,7 +13,7 @@ class UserModuleTest extends TestCase
      *
      * @test
      */
-    function testExample()
+    function ingresar_modulo_usuarios()
     {
 
         $this->get('/usuarios')
