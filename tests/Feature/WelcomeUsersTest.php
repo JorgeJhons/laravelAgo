@@ -11,9 +11,14 @@ class WelcomeUsersTest extends TestCase
     /**
      * A basic test example.
      *
-     * @return void
+     * @test void
      */
-    public function testExample()
+    function los_que_tienen_apodo()
+    {
+        $this->assertTrue(true);
+    }
+
+    function los_que_no_tienen_apodo()
     {
         $this->assertTrue(true);
     }
