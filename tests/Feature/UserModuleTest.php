@@ -20,4 +20,16 @@ class UserModuleTest extends TestCase
              ->assertStatus(200)
              ->assertSee('Usuarios');
     }
+
+    function mostrar_texto_modulo_usuarios(){
+        $this->get('/usuarios/5')
+             ->assertStatus(200)
+             ->assertSee('Mostrando detalles del usuario:5');
+    }
+
+    function mostrar_usuarios_nuevo(){
+        $this->get('/usuarios/nuevo')
+             ->assertStatus(200)
+             ->assertSee('Crear nuevo usuario');
+    }
 }
